@@ -1,0 +1,51 @@
+.navbar{
+    padding: 5px 20px;
+    background-color:rgba(226, 96, 189, 0.679);
+    color: #eee;
+    border-bottom: 2px solid #eee;
+}
+.logo{
+    display:inline-block;
+    text-decoration: none;
+    color:#eee;
+    transition: color .5s ease-in-out;/*för att ta tid för att växla*/
+
+}
+.logo:hover{
+    color:var(--color);
+}
+.nav{
+    display: inline-block;/*att det kommer brevid logo*/
+    margin-left: 539px;
+}
+.nav>li{
+    display: inline-block;
+    list-style: none;/*varje nav har inte punkt nu */
+}
+.link{
+    display: block;
+    text-decoration: none;/*varje nav har inte line*/
+    font-size: 1.3rem;
+    color: #eee;
+    padding: 15px 15px;
+}
+.link.active{
+   color: var(--color);
+}
+@media screen and (max-width:768px){
+    .nav{
+        margin:0
+    }
+    
+}
+@media screen and (max-width:500px){
+    .nav{
+        margin:0
+    }
+    .navbar{
+        padding: 0px 10px;
+    }
+    .link{
+        padding: 10px 5px;
+    }
+}

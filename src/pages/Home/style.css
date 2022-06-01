@@ -1,0 +1,77 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.home{
+    height: 86vh;
+}
+.header{
+    height: 100%;
+    width: 100%;
+    position: relative;
+
+}
+
+.header::after{
+    position: absolute;
+    content:'';
+    top:0;
+    left:0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.422);;
+    
+}
+.video{
+    height:100%;
+    width:100%;
+    object-fit: cover;
+}
+.content{
+    color:antiquewhite;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    /*background-color: rgba(0, 0, 0, 0.528);*/
+    /*border-radius: 10px;*/
+    z-index: 1;/*att funkar utanför layout*/
+    padding: 2rem;
+}
+.title{
+    padding:0rem;
+}
+.desc{
+    text-align: center;
+    padding: 1rem 1rem 2rem 1rem ;
+    /*padding-bottom: 2rem;*/
+    font-size: 1.3rem;
+    color:#ddd;
+}
+.content-link{
+    display: block;
+    text-decoration: none;
+    color:#eee;
+    padding: 1.2rem;
+    background-color: rgba(226, 96, 189, 0.679);;
+    width: 30%;
+    border-radius:10px;
+    margin: 0 auto;/*funkar när vi använder width*/
+    text-align:center;
+    /*margin:0 auto;/*det finkar här när kommer använda widthatt det blir i mitten*/
+}
+.content-link:hover{
+    transform: scale(0.96);
+}
+@media screen and (max-width:768px){
+    .content{
+        width: 80%;
+    }
+}
+@media screen and (max-width:500px){
+   .content{
+       width:90%;
+   }
+
+}
